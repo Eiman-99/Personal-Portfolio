@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background: url(/img/Frame1.png) no-repeat center center/cover;
+    height: 100vh;
+}
+/* Navbar */
+#logo img{
+    width: 80px;
+    height: auto;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: #F85A5A;
+}
+
+#navbar .container{
+    display: flex;
+    padding: 30px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 35rem;
+}
+
+nav li {
+    padding: 0 35px ;
+}
