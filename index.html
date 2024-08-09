@@ -3,34 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utilities.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
     <!-- Navbar -->
-    <header>
-        <nav id="navbar">
-            <div class="container">
-            <div id="logo"><img src="/img/LOGO.png"></div>
+    <header id="header-home">
+        <div class="apps-showcase">
+        
+            <div class="v-line"></div>
+           <a href="#"><i class="fa-brands fa-telegram"></i></a> 
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <i class="fa-brands fa-facebook"></i> -->
+        </div>
+        <nav id="main-nav">
+            <div class="navbar container">
+            <h1>
+            <img src="img/LOGO.png" alt="my portfolio" id="logo">
+            </h1> 
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skilld</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#home" class="navBtn current">Home</a></li>
+                <li><a href="#about" class="navBtn">About</a></li>
+                <li><a href="#skills" class="navBtn">Skills</a></li>
+                <li><a href="#projects" class="navBtn">Projects</a></li>
+                <li><a href="#contact" class="navBtn">Contact</a></li>
             </ul>
-            </div>
+        </div>
         </nav>
-
-        <section id="home" class="hero">
-            
-            <div class="container">
-
-            </div>
-        </section>
+    
+    <!-- Hero Section -->
+    <div id="home" class="header-content">
+        <h1 id="greeting">Hello,</h1>
+        <h1><span class="text-primary txt-type" data-wait="3000" data-words='["I am Eiman", "I am a Frontend developer", "I am a Freelancer"]'></span></h1>
+        <a href="#" class="btn btn-light">Download Resume</a>
+        <div  id="down-arrow"><a href="#about"><i class="fa-solid fa-chevron-down"></i></a></div>
+    </div>
     </header>
+
+     <!-- About Section -->
+     <section id="about">
+      <div class="flex-container container">
+          <div class="col-1 col">
+              <div class="row1">
+                  <h2>About Me</h2>
+                  <h1>Passionate Front-End Developer Creating Engaging User Experiences</h1>
+              </div>
+              <div class="row2">
+                  <div class="h-line"></div>
+                  <div>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus hic dolorem corporis corrupti quibusdam. 
+                      Ullam molestias qui adipisci unde dolor accusamus vero beatae labore, dolorum modi delectus laborum ratione voluptatum.</p>
+                      <a href="#" class="btn btn-dark">Download Resume</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-2 col">
+              <img src="img/personal-photo.png" alt="">
+          </div>
+      </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <p class="lead"> Technologies I've been working with recently</p>
+    <div class="container">
+      <div class="icon-container"><img src="img/html.png"></div>
+      <div class="icon-container"><img src="img/css.png"></div>
+      <div class="icon-container"><img id="bootstrap" src="img/bootsrap.png"></div>
+      <div class="icon-container"><img src="img/js1.png"></div>
+      <div class="icon-container"><img src="img/angular.png"></div>
+      <div class="icon-container"><img src="img/vs-code.png"></div>
+      <div class="icon-container"><img src="img/git.png"></div>
+      <div class="icon-container"><img src="img/github.png"></div>
+    </div>
+  </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <p class="lead"> Check out some of my projects</p>
+            <div class="items">
+                <div class="item">
+                <div class="item-image">
+                    <img src="img/items/item1.png" alt="" />
+                  </div>
+                  <div class="item-text">
+                    <div class="item-text-wrap">
+                      <p class="item-text-category">Potfolio Website</p>
+                      <h2 class="item-text-title">Personal Portfolio</h2>
+                    </div>
+                  </div>
+                </div>
+                  <div class="item">
+                    <div class="item-image">
+                      <img src="img/items/item3.png" alt="" />
+                    </div>
+                    <div class="item-text">
+                      <div class="item-text-wrap">
+                        <p class="item-text-category">E-commerce Website</p>
+                        <h2 class="item-text-title">MegaMart</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="item-image">
+                      <img src="img/items/item2.png" alt="" />
+                    </div>
+                    <div class="item-text">
+                      <div class="item-text-wrap">
+                        <p class="item-text-category">Movie Landing Page</p>
+                        <h2 class="item-text-title">Movix</h2>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+  <section id="contact">
+  <div class="contact-container">
+        <div class="contact-info">
+            <h2>GET IN TOUCH</h2>
+            <p>Alexandria, Egypt<br>+20 1101662140<br>eimanhamdy99@gmail.com</p>
+        </div>
+        <div class="contact-form">
+            <form action="#">
+              <div class="flex-row">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+              </div>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <p>Copyright © 2024 <span class="brand">Eiman</span>. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Terms & Policy</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/a7d9ff873d.js" crossorigin="anonymous"></script>
+    <script src="typewriter.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
