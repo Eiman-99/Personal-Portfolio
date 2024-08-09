@@ -1,0 +1,86 @@
+/* Media Queries */
+
+/* Extra Small Devices (Phones, < 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #header-home {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #skills .icon-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    #projects .items {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small Devices (Tablets, 600px - 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .col-2 img {
+        width: 80%;
+    }
+
+    #skills .icon-container {
+        width: 110px;
+        height: 110px;
+    }
+
+    #projects .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium Devices (Small Laptops, 768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .col-2 img {
+        width: 70%;
+    }
+
+    #skills .icon-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    #projects .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Devices (Desktops, > 992px) */
+@media (min-width: 992px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    #skills .icon-container {
+        width: 130px;
+        height: 130px;
+    }
+
+    #projects .items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
