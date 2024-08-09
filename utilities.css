@@ -98,3 +98,13 @@
     display: inline-block;
     margin: 6rem 0 0 2rem;
 }
+
+.app-icon {
+    transition: all 0.3s ease; /* Smooth scaling transition */
+}
+
+
+/* Enlarged state */
+.app-icon.enlarged {
+    transform: scale(1.3); /* Size the icons to 150% */
+}

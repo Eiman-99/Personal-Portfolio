@@ -47,3 +47,26 @@ window.addEventListener("scroll", handleScroll);
 
 // Initial check in case the section is already in view on page load
 handleScroll();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactLink = document.getElementById("contact-link");
+  const appIcons = document.querySelectorAll(".app-icon");
+
+  contactLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default action of the link
+
+    // Add the enlarged class to all icons
+    appIcons.forEach((icon) => icon.classList.add("enlarged"));
+
+    // Scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll
+    });
+
+    // Remove the enlarged class after 1 second (or any desired time)
+    setTimeout(() => {
+      appIcons.forEach((icon) => icon.classList.remove("enlarged"));
+    }, 1000); // 1000ms = 1 second
+  });
+});

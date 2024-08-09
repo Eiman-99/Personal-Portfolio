@@ -306,6 +306,65 @@ li{
     transform: translateX(0px); 
 }
 
+/* Education & Experience */
+#edu-exp{
+    padding-top: 4rem;
+}
+
+.edu-exp-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#edu-exp h1{
+    color: var(--main-color);
+    padding: 5rem 0 2rem 0;
+
+}
+
+.section {
+    width: 45%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: var(--dark-color);
+    padding: 20px;
+    border-radius: 8px;
+    height: 13rem;
+}
+
+.date {
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#institution {
+    color: var(--main-color);
+    font-size: 16px;
+    margin: 5px 0 15px;
+}
+
+.card p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
 /* Skills section */
 #skills{

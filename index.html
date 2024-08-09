@@ -13,13 +13,13 @@
 <body>
     <!-- Navbar -->
     <header id="header-home">
-        <div class="apps-showcase">
+        <div class="apps-showcase" id="contact-apps">
         
             <div class="v-line"></div>
-           <a href="#"><i class="fa-brands fa-telegram"></i></a> 
-            <a href="#"><i class="fa-brands fa-discord"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/eimanh/"><i class="fa-brands fa-linkedin"></i></a>
+           <a class="app-icon" href="https://api.whatsapp.com/send?phone=201101662140"><i class="fa-brands fa-whatsapp"></i></a> 
+            <a class="app-icon" href="mailto:eimanhamdy99@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a class="app-icon" href="https://github.com/Eiman-99"><i class="fa-brands fa-github"></i></a>
+            <a class="app-icon" href="https://www.linkedin.com/in/eimanh/"><i class="fa-brands fa-linkedin"></i></a>
             <!-- <i class="fa-brands fa-facebook"></i> -->
         </div>
         <nav id="main-nav">
@@ -30,9 +30,10 @@
             <ul>
                 <li><a href="#home" class="navBtn current">Home</a></li>
                 <li><a href="#about" class="navBtn">About</a></li>
+                <li><a href="#edu-exp" class="navBtn">Education</a></li>
                 <li><a href="#skills" class="navBtn">Skills</a></li>
                 <li><a href="#projects" class="navBtn">Projects</a></li>
-                <li><a href="#contact" class="navBtn">Contact</a></li>
+                <li><a href="#header-home" id="contact-link" class="navBtn">Contact</a></li>
             </ul>
         </div>
         </nav>
@@ -69,6 +70,31 @@
           </div>
       </div>
   </section>
+
+  <!-- Education & Experience -->
+   <section id="edu-exp">
+    <h1 class="container">Education & Experience</h1>
+  <div class="edu-exp-section container">
+    <div class="section">
+        <h2>My Education</h2>
+        <div class="card">
+            <div class="date">2023</div>
+            <h3>Faculty of Engineering</h3>
+            <p id="institution">Electromechanics Department</p>
+            <p>Completed my studies with a focus on electromechanics. My final project involved designing an autonomous air hockey system.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>My Experience</h2>
+        <div class="card">
+            <div class="date">2024</div>
+            <h3>DEPI</h3>
+            <p id="institution">Frontend developement</p>
+            <p>Specialized in creating responsive and user-friendly web interfaces..</p>
+        </div>
+    </div>
+</div>
+</section>
 
   <!-- Skills Section -->
   <section id="skills">
