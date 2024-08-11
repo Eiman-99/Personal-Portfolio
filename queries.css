@@ -1,86 +1,384 @@
 /* Media Queries */
 
-/* Extra Small Devices (Phones, < 600px) */
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+@media (max-width:1477px){
+    :root{
+        --website-width: 1180px;
+    }
+
+    #logo{
+        height: 14px;
+    }
+
+    li{
+        padding: 1rem 1.8rem;
+        font-size: 0.85rem;
+    }
+
+    #down-arrow{
+        margin-top: 7.5rem;
+        height: 50px;
+    }
+}
+
+@media (max-width:1370px){
+    :root{
+        --website-width: 1000px;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    #down-arrow{
+        margin-top: 9rem;
+        height: 50px;
+    }
+
+    .col-2 img{
+        width: 17rem;
+    }
+
+}
+
+@media (max-width:1260px){
+    #down-arrow{
+        margin-top: 11rem;
+        height: 50px;
     }
     
-    #header-home {
-        padding: 1rem;
+    .card{
+        padding: 7%;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item{
+        width: 50%;
+    }
+
+}
+
+@media (max-width:1200px){
+    :root{
+        --website-width: 1000px;
+    }
+
+    .v-line{
+        display: none;
+    }
+
+    .apps-showcase{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 75%;
+        position: absolute;
+        height: auto;
+        width: 100%;
+        transform: translateX(-1000px);
+        animation: icons 1s 2s forwards ease-in;
+    }
+
+    .apps-showcase i{
+        font-size: 2rem;
+        margin: 10px;
+        transition: all 0.3s;
+    }
+    
+    .apps-showcase i:hover{
+        font-size: 3rem;
+        color: var(--main-color);
+    }
+
+    #down-arrow{
+    margin-top: 11rem;
+    height: 50px;
+    }
+}
+
+@media (max-width:1142px){
+    :root{
+        --website-width: 1000px;
+    }
+
+    .apps-showcase{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 70%;
+        position: absolute;
+        height: auto;
+        width: 100%;
+        transform: translateX(-1000px);
+        animation: icons 1s 2s forwards ease-in;
+    }
+
+    .apps-showcase i{
+        font-size: 2rem;
+        margin: 10px;
+        transition: all 0.3s;
+    }
+    
+    .apps-showcase i:hover{
+        font-size: 3rem;
+        color: var(--main-color);
+    }
+
+    #down-arrow{
+    margin-top: 13rem;
+    height: 50px;
+    }
+
+    #greeting{
+        font-size: 1.5rem;
+    }
+    
+    .header-content h1{
+        font-size: 2.5rem;
+        line-height: 1.2;
+        height: 60px;
+        transform: translatex(-1800px);
+        animation: text 1s 0.5s forwards ease-in;
+    }
+
+}
+
+@media (max-width:1034px){
+    :root{
+        --website-width: 900px;
+    }
+
+    li{
+        padding: 1rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .btn{
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 1110px){
+    .col-2 img{
+        width: 17rem;
+        right: 10%;
+    }
+
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .col-2 img{
+        width: 15rem;
+    }
+
+    #about .btn{
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width:1034px){
+    #about h1{
+        font-size: 1.5rem;
+    }
+
+    .row1 h1{
+        width: 30rem;
+    }
+
+    .row2 p{
+        width: 25rem;
+        font-size: 0.9rem;
+    }
+
+    .col-2 img{
+        width: 13rem;
+    }
+
+    #about .btn{
+        margin-top: 2.5rem;
+    }
+
+    
+}
+
+@media (max-width:945px){
+    :root{
+        --website-width: 800px;
+    }
+
+    li{
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    #down-arrow{
+        margin-top: 14rem;
+        height: 50px;
+    }
+
+    .col-2 img{
+        width: 12rem;
+    }
+
+    .col-1 p{
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+
+    .h-line{
+        border-top: 3px solid var(--main-color);
+        width: 5rem;
+        margin-top: 0.7rem;
+    }
+
+    #about .btn{
+        margin-top: 2.5rem;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    #institution {
+        font-size: 14px;
+    }
+    
+    .card p {
+        font-size: 12px;
+}
+}
+
+
+@media (max-width:840px){
+    :root{
+        --website-width: 750px;
+    }
+
+    li{
+        padding: 1rem 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    #logo{
+       height: 12px;
+    }
+
+    #down-arrow{
+        margin-top: 12rem;
+        height: 50px;
+    }
+
+    #greeting{
+        font-size: 1.2rem;
+    }
+    
+    .header-content h1{
+        font-size: 2rem;
+        transform: translatex(-1800px);
+        animation: text 1s 0.5s forwards ease-in;
+    }
+
+    .btn{
+        font-size: 10px;
+    }
+
+    .apps-showcase{
+        top: 75%;
+    }
+
+    .apps-showcase i{
+        font-size: 1.5rem;
+    }
+
+    .header-content{
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .edu-exp-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .section h2{
+        display: none;
+    }
+
+    .section{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    #my-photo2{
+        width: 20%;
+    }
+
+    .row1 h1{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .col h2{
         text-align: center;
     }
 
-    #skills .icon-container {
-        width: 100px;
-        height: 100px;
+    .row2 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
     }
 
-    #projects .items {
-        grid-template-columns: 1fr;
+    .row2 p{
+        text-align: left;
     }
 
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
+    .personal-photo {
+        text-align: center;
+        margin-bottom: 20px;
+        animation: slideInFromRight 1s ease-out forwards;
     }
 
-    .contact-info, .contact-form {
-        width: 100%;
-        max-width: 100%;
-    }
-}
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
 
-/* Small Devices (Tablets, 600px - 768px) */
-@media (min-width: 600px) and (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
+        }
     }
     
-    .col-2 img {
-        width: 80%;
-    }
+      .personal-photo img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      /* .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      } */
 
-    #skills .icon-container {
-        width: 110px;
-        height: 110px;
-    }
-
-    #projects .items {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
-
-/* Medium Devices (Small Laptops, 768px - 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
-    .col-2 img {
-        width: 70%;
-    }
-
-    #skills .icon-container {
-        width: 120px;
-        height: 120px;
-    }
-
-    #projects .items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Large Devices (Desktops, > 992px) */
-@media (min-width: 992px) {
-    .navbar {
-        padding: 1rem 2rem;
-    }
-
-    #skills .icon-container {
-        width: 130px;
-        height: 130px;
-    }
-
-    #projects .items {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+    
+    
