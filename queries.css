@@ -1,6 +1,6 @@
 /* Media Queries */
 
-@media (max-width:1477px){
+@media (max-width: 1477px){
     :root{
         --website-width: 1180px;
     }
@@ -326,14 +326,19 @@
 }
 
 @media (max-width:768px){
+
+    /* :root{
+        --website-width: 750px;
+    } */
+
     #my-photo2{
         width: 20%;
     }
 
-    .row1 h1{
+    #about h1{
         width: 100%;
         text-align: center;
-
+        font-size: 1.2rem;
     }
 
     .col h2{
@@ -373,12 +378,23 @@
         height: auto;
       }
     
-      /* .flex-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      } */
+      .flex-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+}
 
+@media (max-width:543px){
+
+    
+    :root{
+        --website-width: 350px;
+    }
+
+    /* .flex-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      } */
 }
     
     

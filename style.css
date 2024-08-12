@@ -71,6 +71,7 @@ img {
 }
 
 .container{
+    /* width: 80%; */
     max-width: var(--website-width);
     margin: auto;
 }
