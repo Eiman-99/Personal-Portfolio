@@ -405,11 +405,11 @@
         transition: height 2s;
       }
 
-      /* .mobile-transition{
+      .mobile-transition{
         background: #000000e0;
         backdrop-filter: blur(10px);
         height: 60vh;
-      } */
+      }
 
       .nav-open{
         position: absolute;
@@ -454,9 +454,34 @@
 }
     
     
-@media (max-width:600px){
+
+
+@media (max-width:431px){
+    /* #down-arrow{
+        margin-top: 22rem;
+        height: 50px;
+    } */
+
+    /* :root{
+        --website-width: 380px;
+    } */
+     
+
+    .header-content{
+        text-align: center;
+        padding-top: 82%;
+    }
+
+}
+
+@media (max-width:431px){
+    .header-content{
+        text-align: center;
+        padding-top: 60%;
+    }
+
     #down-arrow{
-        margin-top: 18rem;
+        margin-top: 10rem;
         height: 50px;
     }
 }

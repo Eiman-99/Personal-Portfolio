@@ -128,10 +128,7 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.alignItems = "";
   }
 
-  document.querySelector(".btn-mobile-nav").addEventListener("click", () => {
-    document.querySelector("ul").classList.toggle("nav-open");
-    // document.querySelector("ul").style.display = "flex";
-  });
+  document.querySelector(".btn-mobile-nav").addEventListener("click", () => {});
 }
 
 myMediaQuery2.addEventListener("change", widthChangeCallback2);
