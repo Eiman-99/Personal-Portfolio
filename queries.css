@@ -331,8 +331,31 @@
         --website-width: 750px;
     } */
 
+    #down-arrow{
+        margin-top: 13rem;
+        }
+
+    #about{
+         padding-top: 6rem;
+    }
+
     #my-photo2{
         width: 20%;
+    }
+
+    .personal-photo{
+        animation: slideInFromRight 1s ease-out forwards;
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 
     #about h1{
@@ -360,18 +383,6 @@
         margin-bottom: 20px;
         animation: slideInFromRight 1s ease-out forwards;
     }
-
-    @keyframes slideInFromRight {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-
-        }
-    }
     
       .personal-photo img {
         max-width: 100%;
@@ -382,19 +393,71 @@
         padding-left: 2rem;
         padding-right: 2rem;
       }
+
+      .btn-mobile-nav{
+        position:absolute;
+        right: 0;
+    }
+
+      .navbar{
+        position: relative;
+        height: 0;
+        transition: height 2s;
+      }
+
+      /* .mobile-transition{
+        background: #000000e0;
+        backdrop-filter: blur(10px);
+        height: 60vh;
+      } */
+
+      .nav-open{
+        position: absolute;
+        top: 15%;
+        height: 10rem;
+        flex-direction: column;
+        display: none;
+    }
+
+      a.current{
+        border:none;
+    }
+
+    ul li{
+        font-size: 1rem;
+    }
+
+    #logo{
+        height: 15px;
+    }
+
 }
 
-@media (max-width:543px){
+@media (max-width:680px){
 
     
-    :root{
+    /* :root{
         --website-width: 350px;
-    }
+    } */
 
     /* .flex-container {
         padding-left: 2rem;
         padding-right: 2rem;
       } */
+
+      #down-arrow{
+        margin-top: 14rem;
+        height: 50px;
+    }
+
+      
 }
     
     
+@media (max-width:600px){
+    #down-arrow{
+        margin-top: 18rem;
+        height: 50px;
+    }
+}
+

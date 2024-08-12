@@ -88,11 +88,15 @@ widthChangeCallback(myMediaQuery);
 
 // Media Query check for layout change
 let myMediaQuery2 = window.matchMedia("(max-width: 768px)");
+
 function widthChangeCallback2(myMediaQuery2) {
   const flexContainer = document.querySelector(".flex-container");
   const col2 = document.querySelector(".col-2");
 
   if (myMediaQuery2.matches) {
+    document.querySelector(".btn-mobile-nav").style.display = "flex";
+    document.querySelector("ul").style.display = "none";
+
     // Hide the second column
     col2.style.display = "none";
 
@@ -109,6 +113,9 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.flexDirection = "column";
     flexContainer.style.alignItems = "center";
   } else {
+    document.querySelector(".btn-mobile-nav").style.display = "none";
+    document.querySelector("ul").style.display = "flex";
+
     // Restore the original layout
     col2.style.display = "block";
 
@@ -120,6 +127,11 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.flexDirection = "";
     flexContainer.style.alignItems = "";
   }
+
+  document.querySelector(".btn-mobile-nav").addEventListener("click", () => {
+    document.querySelector("ul").classList.toggle("nav-open");
+    // document.querySelector("ul").style.display = "flex";
+  });
 }
 
 myMediaQuery2.addEventListener("change", widthChangeCallback2);
