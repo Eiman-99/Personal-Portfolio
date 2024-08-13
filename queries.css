@@ -430,7 +430,7 @@
       .mobile-transition {
         background: #000000e0;
         backdrop-filter: blur(20px);
-        height: 70vh;
+        height: 100vh;
       }
       
       ul {
