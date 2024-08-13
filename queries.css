@@ -353,10 +353,6 @@
 
 @media (max-width:768px){
 
-    /* :root{
-        --website-width: 750px;
-    } */
-
     #down-arrow{
         margin-top: 13rem;
         }
@@ -366,7 +362,7 @@
     }
 
     #my-photo2{
-        width: 20%;
+        width: 30%;
     }
 
     /* .personal-photo{
