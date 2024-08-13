@@ -86,7 +86,7 @@ img{
 }
 
 .col-2{
-    width: 40%;
+    width: 40rem;
 }
 
 .row1 h2{
@@ -94,7 +94,7 @@ img{
 }
 
 .row1 h1{
-    width: 40rem;
+    /* width: 40rem; */
     margin-top: 1rem;
     font-size: 2rem;
     line-height: 1.3;
@@ -103,24 +103,24 @@ img{
 .row2{
     display: flex;
     margin-top: 4rem;
+    width: 100%;
 }
 
 .row2 p{
     width: 30rem;
-    margin-left: 2rem;
 }
 
 .row2 .btn{
     display: inline-block;
-    margin: 6rem 0 0 2rem;
+    margin: 6rem 0 0;
 }
 
 .app-icon {
-    transition: all 0.3s ease; /* Smooth scaling transition */
+    transition: all 0.3s ease; 
 }
 
 
 /* Enlarged state */
 .app-icon.enlarged {
-    transform: scale(1.3); /* Size the icons to 150% */
+    transform: scale(1.3); 
 }
