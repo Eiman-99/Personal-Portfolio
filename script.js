@@ -21,32 +21,32 @@ window.addEventListener("scroll", function () {
 });
 
 // Function to check if an element is in viewport
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+// function isElementInViewport(el) {
+//   var rect = el.getBoundingClientRect();
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <=
+//       (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
 
 // Function to handle scroll events
-function handleScroll() {
-  var aboutSection = document.getElementById("about");
+// function handleScroll() {
+//   var aboutSection = document.getElementById("about");
 
-  if (isElementInViewport(aboutSection)) {
-    // Add animation classes when about section is scrolled into view
-    aboutSection.classList.add("animated");
-  }
-}
+//   if (isElementInViewport(aboutSection)) {
+//     // Add animation classes when about section is scrolled into view
+//     aboutSection.classList.add("animated");
+//   }
+// }
 
 // Event listener for scroll events
-window.addEventListener("scroll", handleScroll);
+// window.addEventListener("scroll", handleScroll);
 
 // Initial check in case the section is already in view on page load
-handleScroll();
+// handleScroll();
 
 document.addEventListener("DOMContentLoaded", () => {
   const contactLink = document.getElementById("contact-link");

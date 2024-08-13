@@ -84,8 +84,8 @@
         position: absolute;
         height: auto;
         width: 100%;
-        transform: translateX(-1000px);
-        animation: icons 1s 2s forwards ease-in;
+        /* transform: translateX(-1000px);
+        animation: icons 1s 2s forwards ease-in; */
     }
 
     .apps-showcase i{
@@ -119,8 +119,8 @@
         position: absolute;
         height: auto;
         width: 100%;
-        transform: translateX(-1000px);
-        animation: icons 1s 2s forwards ease-in;
+        /* transform: translateX(-1000px);
+        animation: icons 1s 2s forwards ease-in; */
     }
 
     .apps-showcase i{
@@ -147,8 +147,8 @@
         font-size: 2.5rem;
         line-height: 1.2;
         height: 60px;
-        transform: translatex(-1800px);
-        animation: text 1s 0.5s forwards ease-in;
+        /* transform: translatex(-1800px);
+        animation: text 1s 0.5s forwards ease-in; */
     }
 
 }
@@ -199,7 +199,7 @@
     }
 
     .row2 p{
-        width: 25rem;
+        /* width: 25rem; */
         font-size: 0.9rem;
     }
 
@@ -287,8 +287,8 @@
     
     .header-content h1{
         font-size: 2rem;
-        transform: translatex(-1800px);
-        animation: text 1s 0.5s forwards ease-in;
+        /* transform: translatex(-1800px);
+        animation: text 1s 0.5s forwards ease-in; */
     }
 
     .btn{
@@ -343,7 +343,7 @@
         width: 20%;
     }
 
-    .personal-photo{
+    /* .personal-photo{
         animation: slideInFromRight 1s ease-out forwards;
     }
 
@@ -356,7 +356,7 @@
             transform: translateX(0);
             opacity: 1;
         }
-    }
+    } */
 
     #about h1{
         width: 100%;
@@ -371,7 +371,7 @@
     .row2 {
         display: flex;
         justify-content: center;
-        align-items: start;
+        /* align-items: start; */
     }
 
     .row2 p{
@@ -381,11 +381,11 @@
     .personal-photo {
         text-align: center;
         margin-bottom: 20px;
-        animation: slideInFromRight 1s ease-out forwards;
+        /* animation: slideInFromRight 1s ease-out forwards; */
     }
     
       .personal-photo img {
-        max-width: 100%;
+        /* max-width: 100%; */
         height: auto;
       }
     

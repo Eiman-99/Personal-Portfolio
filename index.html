@@ -1,125 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="queries.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Personal Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <header id="header-home">
-        <div class="apps-showcase" id="contact-apps">
-        
-            <div class="v-line"></div>
-           <a class="app-icon" target="_blank" href="https://api.whatsapp.com/send?phone=201101662140"><i class="fa-brands fa-whatsapp"></i></a> 
-            <a class="app-icon" target="_blank" href="mailto:eimanhamdy99@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a class="app-icon" target="_blank" href="https://github.com/Eiman-99"><i class="fa-brands fa-github"></i></a>
-            <a class="app-icon" target="_blank" href="https://www.linkedin.com/in/eimanh/"><i class="fa-brands fa-linkedin"></i></a>
-            <!-- <i class="fa-brands fa-facebook"></i> -->
+      <div class="apps-showcase" id="contact-apps">
+        <div class="v-line"></div>
+        <a
+          class="app-icon"
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=201101662140"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a class="app-icon" target="_blank" href="mailto:eimanhamdy99@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a class="app-icon" target="_blank" href="https://github.com/Eiman-99"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          class="app-icon"
+          target="_blank"
+          href="https://www.linkedin.com/in/eimanh/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <nav id="main-nav">
+        <div class="navbar container">
+          <h1>
+            <img src="img/LOGO.png" alt="my portfolio" id="logo" />
+          </h1>
+          <ul>
+            <li><a href="#home" class="navBtn current">Home</a></li>
+            <li><a href="#about" class="navBtn">About</a></li>
+            <li><a href="#edu-exp" class="navBtn">Education</a></li>
+            <li><a href="#skills" class="navBtn">Skills</a></li>
+            <li><a href="#projects" class="navBtn">Projects</a></li>
+            <li>
+              <a href="#header-home" id="contact-link" class="navBtn"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="btn-mobile-nav">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
         </div>
-        <nav id="main-nav">
-            <div class="navbar container">
-            <h1>
-            <img src="img/LOGO.png" alt="my portfolio" id="logo">
-            </h1> 
-            <ul>
-                <li><a href="#home" class="navBtn current">Home</a></li>
-                <li><a href="#about" class="navBtn">About</a></li>
-                <li><a href="#edu-exp" class="navBtn">Education</a></li>
-                <li><a href="#skills" class="navBtn">Skills</a></li>
-                <li><a href="#projects" class="navBtn">Projects</a></li>
-                <li><a href="#header-home" id="contact-link" class="navBtn">Contact</a></li>
-            </ul>
-            <div class="btn-mobile-nav">
-              <a href="#" ><i class="fa-solid fa-bars"></i></a>
-            </div>
-        </div>
+      </nav>
 
-        </nav>
-    
-    <!-- Hero Section -->
-    <div id="home" class="header-content">
-        <h1 id="greeting">Hello,</h1>
-        <h1><span class="text-primary txt-type" data-wait="3000" data-words='["I am Eiman", "I am a Frontend developer", "I am a Freelancer"]'></span></h1>
+      <!-- Hero Section -->
+      <div id="home" class="header-content">
+        <div class="header-flex">
+          <h1 id="greeting">Hello,</h1>
+          <h1>
+            <span
+              class="text-primary txt-type"
+              data-wait="3000"
+              data-words='["I am Eiman", "I am a Frontend developer", "I am a Freelancer"]'
+            ></span>
+          </h1>
+        </div>
         <a href="#" class="btn btn-light">Download Resume</a>
-        <div  id="down-arrow"><a href="#about"><i class="fa-solid fa-chevron-down"></i></a></div>
-    </div>
+        <div id="down-arrow">
+          <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </div>
     </header>
 
-     <!-- About Section -->
-     <section id="about">
+    <!-- About Section -->
+    <section id="about">
       <div class="flex-container container">
-          <div class="col-1 col">
-              <div class="row1">
-                  <h2>About Me</h2>
-                  <h1>Passionate Front-End Developer Creating Engaging User Experiences</h1>
-              </div>
-              <div class="row2">
-                  <div class="h-line"></div>
-                  <div>
-                      <p>I'm Eiman Hamdy, an electromechanical engineer who shifted to front-end development. I’m passionate about creating sleek, 
-                        responsive web interfaces that offer seamless user experiences. 
-                        My unique blend of technical expertise and creative vision allows me to bring innovative solutions to every project.</p>
-                      <a href="#" class="btn btn-dark">Download Resume</a>
-                  </div>
-              </div>
+        <div class="col-1 col">
+          <div class="row1">
+            <h2>About Me</h2>
+            <h1>
+              Passionate Front-End Developer Creating Engaging User Experiences
+            </h1>
           </div>
-          <div class="col-2 col">
-              <img id="my-photo" src="img/personal-photo.png" alt="">
+          <div class="row2">
+            <div class="h-line"></div>
+            <div>
+              <!-- <p>
+                I'm Eiman Hamdy, an electromechanical engineer who shifted to
+                front-end development. I’m passionate about creating sleek,
+                responsive web interfaces that offer seamless user experiences.
+                My unique blend of technical expertise and creative vision
+                allows me to bring innovative solutions to every project.
+              </p> -->
+              <a href="#" class="btn btn-dark">Download Resume</a>
+            </div>
           </div>
+        </div>
+        <div class="col-2 col">
+          <img id="my-photo" src="img/personal-photo.png" alt="" />
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- Education & Experience -->
-   <section id="edu-exp">
-    <div class="container">
-    <h1>Education & Experience</h1>
-  <div class="edu-exp-section container">
-    <div class="section">
-        <h2>My Education</h2>
-        <div class="card">
-            <div class="date">2023</div>
-            <h3>Faculty of Engineering</h3>
-            <p id="institution">Electromechanics Department</p>
-            <p>Completed my studies with a focus on electromechanics. My final project involved designing an autonomous air hockey system.</p>
+    <!-- Education & Experience -->
+    <section id="edu-exp">
+      <div class="container">
+        <h1>Education & Experience</h1>
+        <div class="edu-exp-section container">
+          <div class="section">
+            <h2>My Education</h2>
+            <div class="card">
+              <div class="date">2023</div>
+              <h3>Faculty of Engineering</h3>
+              <p id="institution">Electromechanics Department</p>
+              <p>
+                Completed my studies with a focus on electromechanics. My final
+                project involved designing an autonomous air hockey system.
+              </p>
+            </div>
+          </div>
+          <div class="section">
+            <h2>My Experience</h2>
+            <div class="card">
+              <div class="date">2024</div>
+              <h3>DEPI</h3>
+              <p id="institution">Frontend developement</p>
+              <p>
+                Specialized in creating responsive and user-friendly web
+                interfaces..
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="section">
-        <h2>My Experience</h2>
-        <div class="card">
-            <div class="date">2024</div>
-            <h3>DEPI</h3>
-            <p id="institution">Frontend developement</p>
-            <p>Specialized in creating responsive and user-friendly web interfaces..</p>
-        </div>
-    </div>
-  </div>
-</div>
-</section>
+      </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2 class="section-title">My Skills</h2>
-    <p class="lead"> Technologies I've been working with recently</p>
-    <div class="container">
-      <div class="icon-container"><img src="img/html.png"></div>
-      <div class="icon-container"><img src="img/css.png"></div>
-      <div class="icon-container"><img id="bootstrap" src="img/bootsrap.png"></div>
-      <div class="icon-container"><img src="img/js1.png"></div>
-      <div class="icon-container"><img src="img/react.png"></div>
-      <div class="icon-container"><img src="img/vs-code.png"></div>
-      <div class="icon-container"><img src="img/git.png"></div>
-      <div class="icon-container"><img src="img/github.png"></div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <p class="lead">Technologies I've been working with recently</p>
+      <div class="container">
+        <div class="icon-container"><img src="img/html.png" /></div>
+        <div class="icon-container"><img src="img/css.png" /></div>
+        <div class="icon-container">
+          <img id="bootstrap" src="img/bootsrap.png" />
+        </div>
+        <div class="icon-container"><img src="img/js1.png" /></div>
+        <div class="icon-container"><img src="img/react.png" /></div>
+        <div class="icon-container"><img src="img/vs-code.png" /></div>
+        <div class="icon-container"><img src="img/git.png" /></div>
+        <div class="icon-container"><img src="img/github.png" /></div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <!-- <section id="projects">
         <div class="container">
             <h2 class="section-title">My Work</h2>
             <p class="lead"> Check out some of my projects</p>
@@ -160,10 +202,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
-  <!-- <section id="contact">
+    <!-- <section id="contact">
   <div class="contact-container">
         <div class="contact-info">
             <h2>GET IN TOUCH</h2>
@@ -183,16 +225,21 @@
     </div>
   </section> -->
 
-   <!-- Footer -->
-   <footer>
-    <div class="footer-content">
-        <p>Copyright © 2024 <span class="brand">Eiman</span>. All Rights Reserved.</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>
+          Copyright © 2024 <span class="brand">Eiman</span>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
 
-    <script src="https://kit.fontawesome.com/a7d9ff873d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a7d9ff873d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="typewriter.js"></script>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

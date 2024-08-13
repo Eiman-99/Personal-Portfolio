@@ -13,7 +13,7 @@ html {
 body{
     font-family: 'poppins',sans-serif;
     line-height: 1.6;
-    background: #fff;
+    
 }
 
 a{
@@ -115,15 +115,15 @@ img {
     position: absolute;
     height: 100%;
     width: 170px;
-    transform: translateY(-1000px);
-    animation: icons 2s forwards ease;
+    /* transform: translateY(-1000px);
+    animation: icons 2s forwards ease; */
 }
 
-@keyframes icons{
+/* @keyframes icons{
     to{
         transform: translateY(0);
     }
-}
+} */
 
 .v-line{
     border-left: 1px solid #999999;
@@ -160,24 +160,29 @@ li{
     font-size: 2rem;
 }
 
+.header-flex{
+    display: flex;
+    flex-direction: column;
+}
+
 .header-content h1{
     font-size: 3rem;
     line-height: 1.2;
     height: 60px;
-    transform: translatex(-1800px);
-    animation: text 1s 0.5s forwards ease-in;
+    /* transform: translatex(-1800px);
+    animation: text 1s 0.5s forwards ease-in; */
 }
 
-@keyframes text{
+/* @keyframes text{
     0% {
         transform: translateX(-100%);
         opacity: 0;
     }
     100% {
         transform: translateX(0);
-        opacity: 1;
+       
     }
-}
+} */
 
 #down-arrow{
     margin-top: 6rem;
@@ -252,7 +257,7 @@ li{
 }
 
 /* Slide in from left animation */
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
         opacity: 0;
@@ -261,10 +266,10 @@ li{
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
 /* Slide in from right animation */
-@keyframes slideInFromRight {
+/* @keyframes slideInFromRight {
     0% {
         transform: translateX(100px);
         opacity: 0;
@@ -273,9 +278,9 @@ li{
         transform: translateX(0);
         opacity: 1;
     }
-}
+} */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -285,10 +290,10 @@ li{
     100% {
         opacity: 1;
     }
-}
+} */
 
 
-.animated .row1 h2, .animated .row1 h1 {
+/* .animated .row1 h2, .animated .row1 h1 {
     animation: slideInFromLeft 1s ease-out forwards;
 }
 
@@ -298,13 +303,13 @@ li{
 
 .animated .row2 p, .animated .row2 .btn, .animated .row2 .h-line{
     animation: fadeIn 1s ease-out forwards;
-}
+} */
 
 /* Initial state: elements hidden */
-.row1 h2, .row1 h1, .col-2 img, .row2 p, .row2 .btn, .row2 .h-line{
+/* .row1 h2, .row1 h1, .col-2 img, .row2 p, .row2 .btn, .row2 .h-line{
     opacity: 0;
     transform: translateX(0px); 
-}
+} */
 
 /* Education & Experience */
 #edu-exp{
@@ -391,52 +396,52 @@ h3 {
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    animation: bubble-up 0.6s ease-out ;
+    /* animation: bubble-up 0.6s ease-out ; */
 }
 
-#skills .icon-container {
+/* #skills .icon-container {
     animation: bubble-up 0.6s ease-out forwards;
    
-}
+} */
 
-#skills .icon-container {
+/* #skills .icon-container {
     opacity: 0;
     transform: translateY(300px);
 }
 
 #skills .icon-container:nth-child(1) {
     animation-delay: 0.2s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(2) {
+/* #skills .icon-container:nth-child(2) {
     animation-delay: 0.4s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(3) {
+/* #skills .icon-container:nth-child(3) {
     animation-delay: 0.6s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(4) {
+/* #skills .icon-container:nth-child(4) {
     animation-delay: 0.8s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(5) {
+/* #skills .icon-container:nth-child(5) {
     animation-delay: 1s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(6) {
+/* #skills .icon-container:nth-child(6) {
     animation-delay: 1.2s;
-  }
+  } */
   
-#skills .icon-container:nth-child(7) {
+/* #skills .icon-container:nth-child(7) {
     animation-delay: 1.4s; 
-  }
+  } */
   
-#skills .icon-container:nth-child(8) {
+/* #skills .icon-container:nth-child(8) {
     animation-delay: 1.6s; 
-  }
+  } */
 
-@keyframes bubble-up {
+/* @keyframes bubble-up {
     0% {
         transform: translateY(300px); 
         opacity: 0;
@@ -460,7 +465,7 @@ h3 {
         transform: translateY(0);
         opacity: 1;
       }
-  }
+  } */
 
 #skills img{
     width: 80px;
