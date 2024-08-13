@@ -92,11 +92,15 @@ let myMediaQuery2 = window.matchMedia("(max-width: 768px)");
 function widthChangeCallback2(myMediaQuery2) {
   const flexContainer = document.querySelector(".flex-container");
   const col2 = document.querySelector(".col-2");
+  const iconMenu = document.querySelector(".icon-menu");
+  const menuList = document.querySelector("ul");
+  const navBar = document.querySelector(".navbar");
+  const listItems = document.querySelectorAll("ul li");
+  const checkIcon = document.querySelector("#check-icon");
 
   if (myMediaQuery2.matches) {
-    document.querySelector(".icon-menu").style.display = "flex";
-    document.querySelector("ul").style.display = "none";
-
+    iconMenu.style.display = "flex";
+    menuList.style.display = "none";
     // Hide the second column
     col2.style.display = "none";
 
@@ -105,7 +109,6 @@ function widthChangeCallback2(myMediaQuery2) {
       const personalPhotoDiv = document.createElement("div");
       personalPhotoDiv.className = "personal-photo";
       personalPhotoDiv.innerHTML = `<img id="my-photo2" src="img/photo-responsive2.png" alt="">`;
-
       flexContainer.insertBefore(personalPhotoDiv, flexContainer.firstChild);
     }
 
@@ -114,7 +117,7 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.alignItems = "center";
   } else {
     document.querySelector(".icon-menu").style.display = "none";
-    document.querySelector("ul").style.display = "flex";
+    menuList.style.display = "flex";
 
     // Restore the original layout
     col2.style.display = "block";
@@ -128,7 +131,36 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.alignItems = "";
   }
 
-  document.querySelector(".icon-menu").addEventListener("click", () => {});
+  let showList = false;
+
+  // Mobile Navigation
+
+  function toggleMenu() {
+    // showList = !showList;
+    showList = !showList;
+
+    if (showList) {
+      // Show menu
+      menuList.style.display = "flex";
+      menuList.classList.add("show-list");
+      navBar.classList.add("mobile-transition");
+    } else {
+      // Hide menu
+      menuList.style.display = "none";
+      menuList.classList.remove("show-list");
+      navBar.classList.remove("mobile-transition");
+    }
+  }
+
+  iconMenu.addEventListener("click", toggleMenu);
+
+  listItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      if (showList) {
+        toggleMenu();
+      }
+    });
+  });
 }
 
 myMediaQuery2.addEventListener("change", widthChangeCallback2);
