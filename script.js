@@ -94,7 +94,7 @@ function widthChangeCallback2(myMediaQuery2) {
   const col2 = document.querySelector(".col-2");
 
   if (myMediaQuery2.matches) {
-    document.querySelector(".toggle").style.display = "flex";
+    document.querySelector(".icon-menu").style.display = "flex";
     document.querySelector("ul").style.display = "none";
 
     // Hide the second column
@@ -113,7 +113,7 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.flexDirection = "column";
     flexContainer.style.alignItems = "center";
   } else {
-    document.querySelector(".toggle").style.display = "none";
+    document.querySelector(".icon-menu").style.display = "none";
     document.querySelector("ul").style.display = "flex";
 
     // Restore the original layout
@@ -128,7 +128,7 @@ function widthChangeCallback2(myMediaQuery2) {
     flexContainer.style.alignItems = "";
   }
 
-  document.querySelector(".toggle").addEventListener("click", () => {});
+  document.querySelector(".icon-menu").addEventListener("click", () => {});
 }
 
 myMediaQuery2.addEventListener("change", widthChangeCallback2);
